@@ -1,0 +1,42 @@
+{
+  "name": "divyesh-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mung": "^0.5.1",
+    "http": "^0.0.1-security",
+    "knex": "^0.21.13",
+    "lodash": "^4.17.20",
+    "moment-timezone": "^0.5.32",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "mock-knex": "^0.4.9",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "jest --runInBand --detectOpenHandles --coverage --forceExit",
+    "migrate": "knex migrate:latest",
+    "migrateCreate": "knex migrate:make article_comment_details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jay427/divyesh-test.git"
+  },
+  "author": "Jay Jariwala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jay427/divyesh-test/issues"
+  },
+  "homepage": "https://github.com/Jay427/divyesh-test#readme"
+}
